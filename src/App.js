@@ -10,8 +10,9 @@ import CartProvider from './CartContext';
 
 function App() {
   return (
-    <CartProvider>
-      <Container>
+    // <CartProvider>
+    //   <Container>
+    <>
             <NavBarComponent></NavBarComponent>
             <BrowserRouter>
             <Routes>
@@ -20,8 +21,9 @@ function App() {
               <Route path='cancel' element={<Cancel />} />
             </Routes>
             </BrowserRouter>
-      </Container>
-    </CartProvider>
+    </>
+    //   </Container>
+    // </CartProvider>
   );
 }
 
